@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "383195503636",
+    "firebase_url": "https://survery-app-92fe5.firebaseio.com",
+    "project_id": "survery-app-92fe5",
+    "storage_bucket": "survery-app-92fe5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383195503636:android:a6a9b49e4b88f183",
+        "android_client_info": {
+          "package_name": "surveyapp.com.thesmader.surveyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383195503636-vpd94qf2kb02dqqadq0begjoteuai91e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "surveyapp.com.thesmader.surveyapp",
+            "certificate_hash": "c483a090db6a3720bbcfe126ec167cf61ccac6c6"
+          }
+        },
+        {
+          "client_id": "383195503636-4f2rvbr43a4sq8e4a9dbjgk4ihf4rj7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKhtRxnxsYkB5zv_aAVGr06Dn7kA2ZUo8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383195503636-4f2rvbr43a4sq8e4a9dbjgk4ihf4rj7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383195503636:android:34ad4b548f3a6fac",
+        "android_client_info": {
+          "package_name": "surveyapp.thesmader.com.surveyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383195503636-h1t0put2mhdu7rck2lcpof4k3r3fpe6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "surveyapp.thesmader.com.surveyapp",
+            "certificate_hash": "c483a090db6a3720bbcfe126ec167cf61ccac6c6"
+          }
+        },
+        {
+          "client_id": "383195503636-u3qv84sfr37kig6num24k8l9jrori8et.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "surveyapp.thesmader.com.surveyapp",
+            "certificate_hash": "0b857b3423273c05f954f21d3b531cce0aa36f48"
+          }
+        },
+        {
+          "client_id": "383195503636-l6mtkeek6pjdga19lpgp0vcbr08ngf0s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "surveyapp.thesmader.com.surveyapp",
+            "certificate_hash": "07f4cae8473b955c19db60578a947b2c51e1b7c7"
+          }
+        },
+        {
+          "client_id": "383195503636-4f2rvbr43a4sq8e4a9dbjgk4ihf4rj7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKhtRxnxsYkB5zv_aAVGr06Dn7kA2ZUo8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383195503636-4f2rvbr43a4sq8e4a9dbjgk4ihf4rj7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
