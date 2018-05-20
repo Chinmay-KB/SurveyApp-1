@@ -1,5 +1,6 @@
 package surveyapp.thesmader.com.surveyapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -35,7 +37,7 @@ import java.util.Map;
  * Created by Chinmay on 02-05-2018.
  */
 
-public class entryActivity extends AppCompatActivity implements View.OnClickListener{
+public class entryActivity extends BaseActivity implements View.OnClickListener{
    public static String scode;
     public static String semesterValue;
     public static String yearValue;
@@ -68,11 +70,15 @@ public class entryActivity extends AppCompatActivity implements View.OnClickList
          this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page_entry);
+         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+         //inflate your activity layout here!
+         View contentView = inflater.inflate(R.layout.page_entry, null, false);
+         mDrawer.addView(contentView, 0);
          ConstraintLayout constraintLayout = findViewById(R.id.entry_anim);
-         //AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
-         //animationDrawable.setEnterFadeDuration(6000);
-         //animationDrawable.setExitFadeDuration(6000);
+         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+         animationDrawable.setEnterFadeDuration(6000);
+         animationDrawable.setExitFadeDuration(6000);
          stream1=(RadioGroup)findViewById(R.id.stream1);
          stream2=(RadioGroup)findViewById(R.id.stream2);
          bs3=findViewById(R.id.floatingActionButton6);
@@ -109,25 +115,6 @@ public class entryActivity extends AppCompatActivity implements View.OnClickList
          RadioButton r7=(RadioButton)findViewById(R.id.imsc);
          RadioButton r8=(RadioButton)findViewById(R.id.mres);
          RadioButton r9=(RadioButton)findViewById(R.id.phd);
-         if(stream.equals("B.Tech"))
-             r1.setChecked(true);
-         if(stream.equals("M.A"))
-             r2.setChecked(true);
-         if(stream.equals("M.B.A"))
-             r3.setChecked(true);
-         if(stream.equals("B.Arch"))
-             r4.setChecked(true);
-         if(stream.equals("M.Sc"))
-             r5.setChecked(true);
-         if(stream.equals("Dual Degree"))
-             r6.setChecked(true);
-         if(stream.equals("Integrated M.Sc"))
-             r7.setChecked(true);
-         if(stream.equals("M.Tech(Res)"))
-             r8.setChecked(true);
-         if(stream.equals("Ph.D"))
-             r9.setChecked(true);
-
         data=new String[5];
         keyOfData=new String[5];
         notebookRef=db.collection(scode);

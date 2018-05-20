@@ -1,14 +1,14 @@
 package surveyapp.thesmader.com.surveyapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -31,7 +31,7 @@ import java.util.Map;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     public String subjectCode;
     public String yearValue;
     public String semesterValue;
@@ -48,14 +48,11 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ConstraintLayout constraintLayout = findViewById(R.id.main_anim);
-        //AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
-        //animationDrawable.setEnterFadeDuration(5000);
-        //animationDrawable.setExitFadeDuration(5000);
-        //animationDrawable.start();
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        //inflate your activity layout here!
+        View contentView = inflater.inflate(R.layout.activity_main, null, false);
+        mDrawer.addView(contentView, 0);
         stream1=(RadioGroup)findViewById(R.id.stream1);
         stream2=(RadioGroup)findViewById(R.id.stream2);
         mAuth = FirebaseAuth.getInstance();
@@ -96,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     public void dataEntry(View view) {
         entryActivity x = new entryActivity();
 
-        TextInputEditText editText = (TextInputEditText) findViewById(R.id.subject_code);
+        EditText editText = (EditText) findViewById(R.id.subject_code);
         String subjectCode = editText.getText().toString();
         Spinner year_select = (Spinner) findViewById(R.id.year_select);
         yearValue = year_select.getSelectedItem().toString();
@@ -105,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         x.scode = subjectCode;
         x.semesterValue = semesterValue;
         x.yearValue = yearValue;
-        FirebaseUser users=FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser users=FirebaseAuth.getInstance().getCurrentUser();;
         if (yearValue.equals("Choose Year") || semesterValue.equals("Choose Semester") || midendsem==null || stream==null)
             Toast.makeText(getApplicationContext(), "Please provide appropriate input", Toast.LENGTH_SHORT).show();
         else {
