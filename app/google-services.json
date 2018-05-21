@@ -8,7 +8,11 @@
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:383195503636:android:34ad4b548f3a6fac",
+=======
+"mobilesdk_app_id": "1:383195503636:android:34ad4b548f3a6fac",
+>>>>>>> ec7c37e85b9257da56b1795562062a6a1c3355cb
         "android_client_info": {
           "package_name": "surveyapp.thesmader.com.surveyapp"
         }
@@ -29,7 +33,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBxFvzcrjp9_ofs6BDrNy05eDjyeZlc6oU"
+          "current_key": ""
         }
       ],
       "services": {
