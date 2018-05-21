@@ -67,6 +67,17 @@ public class MainActivity extends BaseActivity {
         midendsem=rb.getText().toString();
         Toast.makeText(MainActivity.this,
                 rb.getText(), Toast.LENGTH_SHORT).show();
+        //boolean checked=((RadioButton) view).isChecked();
+        //switch (view.getId()){
+          //  case R.id.midsem:
+            //    if (checked)
+              //      midendsem = "Midsem";
+                //break;
+            //case R.id.endsem:
+              //  if (checked)
+                //    midendsem = "Endsem";
+                //break;
+        //}
     }
     public void streamChoice1(View view)
     {

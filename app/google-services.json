@@ -8,53 +8,6 @@
   "client": [
     {
       "client_info": {
-<<<<<<< HEAD
-=======
-        "mobilesdk_app_id": "1:383195503636:android:a6a9b49e4b88f183",
-        "android_client_info": {
-          "package_name": "surveyapp.com.thesmader.surveyapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "383195503636-vpd94qf2kb02dqqadq0begjoteuai91e.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "surveyapp.com.thesmader.surveyapp",
-            "certificate_hash": "c483a090db6a3720bbcfe126ec167cf61ccac6c6"
-          }
-        },
-        {
-          "client_id": "383195503636-4f2rvbr43a4sq8e4a9dbjgk4ihf4rj7v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": ""
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "383195503636-4f2rvbr43a4sq8e4a9dbjgk4ihf4rj7v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
->>>>>>> 698b1e185c0bfab67c50df6cdb38341f97c96346
         "mobilesdk_app_id": "1:383195503636:android:34ad4b548f3a6fac",
         "android_client_info": {
           "package_name": "surveyapp.thesmader.com.surveyapp"

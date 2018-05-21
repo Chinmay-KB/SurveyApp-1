@@ -61,6 +61,7 @@ public class interimActivity extends BaseActivity {
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         //inflate your activity layout here!
+        assert inflater != null;
         View contentView = inflater.inflate(R.layout.landing_page_new, null, false);
         mDrawer.addView(contentView, 0);
         FirebaseUser users= FirebaseAuth.getInstance().getCurrentUser();
